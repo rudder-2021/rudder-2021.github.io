@@ -2934,7 +2934,7 @@
 
 	#banner {
 		padding: 12em 0 10em 0;
-		background-image: url('../../images/banner.jpg');
+		background-image: url('../../images/dataset.png');
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;
@@ -2944,16 +2944,17 @@
 	}
 
 		#banner h1 {
-			font-size: 3.5em;
-			font-weight: 100;
-			color: #fff;
+			font-size: 4.5em;
+			font-weight: 1000;
+			color: #000;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
 		}
 
 		#banner p {
-			font-size: 1em;
+			font-size: 2em;
+			font-weight: 500;
 			color: rgba(255, 255, 255, 0.55);
 			margin-bottom: 1.75em;
 		}
