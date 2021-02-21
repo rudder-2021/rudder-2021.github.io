@@ -1,141 +1,186 @@
-<!DOCTYPE HTML>
-<!--
-    Theory by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-    -->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">
-        <meta name="description" content="RUDDER">
-        <meta name="keywords" content="RUDDER,Manuscript,Dataset,Challenges">
-        <meta name="author" content="Jayaprakash Akula">
-        <title>RUDDER</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    </head>
-    <body>
-        <!-- Header -->
-        <!-- <header id="header"> -->
-        <nav style="font-size:1.3em;" class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>RUDDER 2021</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.svg" alt="" width="30" height="24" class="d-inline-block align-top">
+                RUDDER 2021
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#overview">Overview</a>
-                    <a class="nav-item nav-link active" href="#manuscript">Manuscript</a>
-                    <a class="nav-item nav-link active" href="#about">About</a>
-                    <a class="nav-item nav-link active" href="#annotation">Annotations</a>
-                    <a class="nav-item nav-link active" href="#gtsum">Challenges</a>
-                    <a class="nav-item nav-link active" href="#applications">Applications</a>
-                    <a class="nav-item nav-link active" href="#downloads">Downloads</a>
-                    <a class="nav-item nav-link active" href="#benchmark">Benchmark</a>
-                    <a class="nav-item nav-link active" href="#cite">Citation</a>
-                </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#overview">Overview</a>
+                <a class="nav-item nav-link active" href="#about">About</a>
+                <a class="nav-item nav-link active" href="#annotation">Annotations</a>
+                <a class="nav-item nav-link active" href="#manuscript">Manuscript</a>
+                <a class="nav-item nav-link active" href="#applications">Applications</a>
+                <a class="nav-item nav-link active" href="#downloads">Downloads</a>
+                <a class="nav-item nav-link active" href="#citation">Citation</a>
             </div>
-        </nav>
-        <!-- </header> -->
-        <!-- Banner -->
-        <section id="banner">
+          </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="overview">
             <h1>Welcome to RUDDER</h1>
-            <p>c<b>R</b>oss ling<b>U</b>al vi<b>D</b>eo an<b>D</b> t<b>E</b>xt <b>R</b>etrieval.</p>
+            <p>c<b style="color: #0d6efd;">R</b>oss ling<b style="color: #0d6efd;">U</b>al vi<b style="color: #0d6efd;">D</b>eo an<b style="color: #0d6efd;">D</b> t<b style="color: #0d6efd;">E</b>xt <b style="color: #0d6efd;">R</b>etrieval.</p>
         </section>
-        <section id="zero" class="wrapper">
-            <div class="span6" style="text-align:right;">
-                <h6 style="float:right; text-align:right;">  This research was  sponsored by the IBM Research, India (specifically the IBM AI Horizon Networks - IIT Bombay initiative).
-                </h6>
-            </div>
-        </section>
-        <section  class="wrapper">
-            <div id="about" class="container">
+        <section id="about" class="content">
+            <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
                 <header>
                     <h2>About RUDDER</h2>
                 </header>
-                <p>RUDDER contains video that describes the creation of scientific toys from waste material. Till time existing datasets have data of videos and their relevant sentences/captions in english but RUDDER has data of videos, sentences/captions and audio too! These videos being instructional in nature, audio plays an important role. Moreover this is probably the first truely authentic multi-lingual video dataset(unlike existing bi-lingual datasets).</p>
-                <p>RUDDER consists of 492(to be updated) videos, with an average length of 80 seconds and around 7 sentences describing every video. A video is present in multiple languages namely HINDI, TAMIL, MALAYALAM, URDU, KANNADA. (Note: All videos do not have audio in every language mentioned earlier)</p>
-                <!-- <video width="720" height="480" controls style="margin-left: auto;margin-right: auto;display: block">
-                    <source src="assets/video/output.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
-                <iframe width="720" height="480" style="margin-left: auto;margin-right: auto;display: block"
-src="https://www.youtube.com/embed/V5_6dMZKeoY?autoplay=1&mute=1">
-</iframe>
+                <p>
+                    RUDDER contains video that describes the creation of scientific 
+                    toys from waste material. Till time existing datasets have data 
+                    of videos and their relevant sentences/captions in english but 
+                    RUDDER has data of videos, sentences/captions and audio too! 
+                    These videos being instructional in nature, audio plays an 
+                    important role. Moreover this is probably the first truely 
+                    authentic multi-lingual video dataset(unlike existing bi-lingual 
+                    datasets).
+                </p>
+                <p>
+                    RUDDER consists of 492(to be updated) videos, with an average 
+                    length of 80 seconds and around 7 sentences describing every 
+                    video. A video is present in multiple languages namely HINDI, 
+                    TAMIL, MALAYALAM, URDU, KANNADA. (Note: All videos do not have 
+                    audio in every language mentioned earlier)
+                </p>
+                <iframe width="100%" height="500px"
+                    style="margin-left: auto;margin-right: auto;display: block"
+                    src="https://www.youtube.com/embed/V5_6dMZKeoY?autoplay=1&mute=1">
+                </iframe>
             </div>
         </section>
-        <section id="two" class="wrapper style1 special">
-            <div class="inner" id="annotation">
+        <section id="annotation" class="content">
+            <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
                 <header>
                     <h2>Annotation Guidelines</h2>
                 </header>
-                <p style="text-align: left;">For every query, the augmented supervision consists of the follow four supervised classes of relevance judgements (in addition to the default relevance judgement associated with any retrieval dataset),&nbsp;</p>
-                <p style="text-align: center;">(i) <strong>identity</strong> (ii) <strong>overlap</strong> (iii) <strong>description</strong> and (iv) no <strong>relation</strong>.&nbsp;</p>
-                <p style="text-align: left;">Our task is to refine the structure between the captions of different videos. And to perform video2text and Text2video retrieval. Our dataset consists of videos on science experiments and farming. Close to 600 videos with approximately 7 descriptions per video. In this dataset we have defined four different relations</p>
+                <p style="text-align: left;">
+                    For every query, the augmented supervision consists of the 
+                    follow four supervised classes of relevance judgements 
+                    (in addition to the default relevance judgement associated 
+                    with any retrieval dataset),
+                </p>
+                <p style="text-align: center;">
+                    (i) <strong>identity</strong> 
+                    (ii) <strong>overlap</strong> 
+                    (iii) <strong>description</strong> and 
+                    (iv) no <strong>relation</strong>.
+                </p>
+                <p style="text-align: left;">
+                    Our task is to refine the structure between the captions of 
+                    different videos. And to perform video2text and Text2video 
+                    retrieval. Our dataset consists of videos on science 
+                    experiments and farming. Close to 600 videos with 
+                    approximately 7 descriptions per video. In this dataset 
+                    we have defined four different relations
+                </p>
                 <ol>
-                    <li style="text-align: left;"><strong>Identity</strong>- the relevance judgement when both captions/video segment share an almost similar amount of information.</li>
-                    <li style="text-align: left;"><strong>Partial</strong>- the relevance judgement when both captions/video segment share somewhat similar information.</li>
-                    <li style="text-align: left;"><strong>Description</strong>- the relevance judgement when the caption/video segment is a historical description of a second caption or the second caption is an application of an object mentioned in the first caption.</li>
-                    <li style="text-align: left;"><strong>No relation</strong>- the relevance judgement when the caption/video segment are irrelevant to each other.<br /><br />While we obtained the augmented supervision using a team of manual annotators on our low resource dataset</li>
+                    <li style="text-align: left;">
+                        <strong>Identity</strong>- the relevance judgement when 
+                        both captions/video segment share an almost similar 
+                        amount of information.
+                    </li>
+                    <li style="text-align: left;">
+                        <strong>Partial</strong>- the relevance judgement when 
+                        both captions/video segment share somewhat similar 
+                        information.
+                    </li>
+                    <li style="text-align: left;">
+                        <strong>Description</strong>- the relevance judgement 
+                        when the caption/video segment is a historical 
+                        description of a second caption or the second caption 
+                        is an application of an object mentioned in the first 
+                        caption.
+                    </li>
+                    <li style="text-align: left;">
+                        <strong>No relation</strong>- the relevance judgement 
+                        when the caption/video segment are irrelevant to each 
+                        other.<br /><br />While we obtained the augmented 
+                        supervision using a team of manual annotators on our 
+                        low resource dataset
+                    </li>
                 </ol>
             </div>
         </section>
-        <section id="zero" class="wrapper">
-            <div class="inner" id="manuscript">
+        <section id="manuscript" class="content">
+            <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
                 <header>
                     <h2>Rudder Manuscript</h2>
                 </header>
-                <iframe src="documents/paper.pdf" width="100%" height="500px">
+                <iframe src="assets/docs/paper.pdf" width="100%" height="500px">
                 </iframe>
-
             </div>
         </section>
-        <section id="one" class="wrapper">
-            <div class="inner" id="applications">
+        <section id="applications" class="content">
+            <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
                 <header>
                     <h2>Applications</h2>
                 </header>
                 <div class="flex flex-3">
                     <article>
                         <header>
-                            <h3>Video-Text Retrieval</h3>
+                            <h3>Video to Text and Text to Video Retrieval</h3>
                         </header>
-                        <p>Video text retrieval involves extracting relevant videos to a given textual query and vice-versa. Usually this is done as a ranking task, where all the entries are ranked in relevance to the query. The retrieval can also be done across languages due to multi-lingual nature of dataset</p>
-                        <!-- <footer>
-                            <a href="#" class="button special">More</a>
-                            </footer> -->
+                        <p>
+                            Video text retrieval involves extracting relevant 
+                            videos to a given textual query and vice-versa. 
+                            Usually this is done as a ranking task, where all 
+                            the entries are ranked in relevance to the query. 
+                            The retrieval can also be done across languages due 
+                            to multi-lingual nature of dataset
+                        </p>
                     </article>
                     <article>
                         <header>
                             <h3>Textual Summarisation of Video</h3>
                         </header>
-                        <p>Textual summarisation  involves outlining the key actions happening in the video in the form of meaningful sentences. These textual descriptions are then evaluated using BLEU, Meteor metrics. The same task can also be extended to cross lingual summarisation.</p>
-                        <!-- <footer>
-                            <a href="#" class="button special">More</a>
-                            </footer> -->
+                        <p>
+                            Textual summarisation  involves outlining the key 
+                            actions happening in the video in the form of 
+                            meaningful sentences. These textual descriptions 
+                            are then evaluated using BLEU, Meteor metrics. The 
+                            same task can also be extended to cross lingual 
+                            summarisation.
+                        </p>
                     </article>
                     <article>
                         <header>
-                            <h3>Multi lingual video recommendation systems</h3>
+                            <h3>Multi lingual video recommendations</h3>
                         </header>
-                        <p>Video recommendation usually works by mining users' profiles and history and after that by ranking videos according to their preferences and viewing history. In absense of such data, one can recommend similar videos just based on content of video with no-textual metadata of any form. In the same way as earlier, this can also be enhanced to include multi-lingual video recommendation.</p>
-                        <!-- <footer>
-                            <a href="#" class="button special">More</a>
-                            </footer> -->
+                        <p>
+                            Video recommendation usually works by mining users' 
+                            profiles and history and after that by ranking videos 
+                            according to their preferences and viewing history. 
+                            In absense of such data, one can recommend similar 
+                            videos just based on content of video with no-textual 
+                            metadata of any form. In the same way as earlier, 
+                            this can also be enhanced to include multi-lingual 
+                            video recommendation.
+                        </p>
                     </article>
                 </div>
             </div>
         </section>
-        <section  class="wrapper">
-            <div id="downloads" class="container">
+        <section id="downloads" class="content">
+            <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
                 <header>
                     <h2>Download</h2>
                 </header>
@@ -171,45 +216,83 @@ src="https://www.youtube.com/embed/V5_6dMZKeoY?autoplay=1&mute=1">
         |-- vidName_startTime_endTime.txt</code></pre>
             </div>
         </section>
-        <section  class="wrapper">
-            <div id="cite" class="container">
-                <h2 class="page-header">License</h2>
-                We downloaded these videos from <a href="http://arvindguptatoys.com/films.html">here</a>
-                and obtained consent from the content creator to use them for research. If you use RUDDER or refer to it, please cite the following paper:
-                <div class="code">
-                    <pre>
-      <code>
-        to be updated
-      </code>
-    </pre>
-                </div>
-                <br>
-                <b>For any communiction regarding RUDDER, please contact</b>: Abhishek [abhishek at cse dot iitb dot ac dot
-                in]
+        <!-- <section id="submission" class="content">
+            <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+                <header>
+                    <h2>Submission</h2>
+                </header>
+                <p>
+                    <iframe src="https://competitions.codalab.org/competitions/submission_widget/29326/" 
+                        style="height: 500px; width: 100%; border: none;"></iframe>
+                </p>
+            </div>
+        </section> -->
+        <section id="leaderboard" class="content">
+            <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+                <header>
+                    <h2>Leaderboard</h2>
+                </header>
+                <p>
+                    <iframe src="https://competitions.codalab.org/competitions/leaderboard_widget/29326/" 
+                        style="height: 500px; width: 100%; border: none;"></iframe>
+                </p>
             </div>
         </section>
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="inner">
-                <div class="flex">
-                    <div class="col-8">
-                        <p class="text-muted">Department of Computer Science and Engineering, Indian Institute of Technology
-                            Bombay<br>
-                            Mumbai, Maharastra, India
-                        </p>
-                        <br>
-                        <br>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/iitblogo.png" width=50 align="right" />
-                    </div>
+        <section id="citation" class="content">
+            <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+                <header>
+                  <h2>License</h2>
+                </header>
+                <p>
+                    We downloaded these videos from 
+                    <a href="http://arvindguptatoys.com/films.html">here</a>
+                    and obtained consent from the content creator to use them 
+                    for research. If you use RUDDER or refer to it, please 
+                    cite the following paper:
+                </p>
+                <div class="code">
+                    <pre><code>to be updated</code></pre>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" style="margin: 1rem;">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="col-8">
+                    <p>
+                      <b>For any communiction regarding RUDDER,<br/>
+                      Contact</b>: <br/>
+                      Abhishek [abhishek at cse dot iitb dot ac dot in] or <br/>
+                      Jayaprakash A [jayaprakash at cse dot iitb dot ac dot in]
+                  </p>
+                    <p class="text-muted">
+                        Department of Computer Science and Engineering,<br>
+                        Indian Institute of Technology, Bombay<br>
+                        Mumbai, Maharastra, India
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.cse.iitb.ac.in" target="_blank"><img src="assets/images/iitblogo.png" width=50 align="right" /> </a>
                 </div>
             </div>
-        </footer>
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/skel.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
