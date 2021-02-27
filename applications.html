@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>RUDDER 2021</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="" width="30" height="24" class="d-inline-block align-top">
+                RUDDER 2021
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">Overview</a>
+                <a class="nav-item nav-link" href="./about.html">About</a>
+                <a class="nav-item nav-link" href="./annotations.html">Annotations</a>
+                <a class="nav-item nav-link" href="./manuscript.html">Manuscript</a>
+                <a class="nav-item nav-link active" href="./applications.html">Applications</a>
+                <a class="nav-item nav-link" href="./downloads.html">Downloads</a>
+                <a class="nav-item nav-link" href="./citation.html">Citation</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h1>Welcome to RUDDER <img src="assets/images/logo.png" alt="" width="160" height="120" class="d-inline-block align-top"></h1>
+            <p>c<b style="color: #0d6efd;">R</b>oss ling<b style="color: #0d6efd;">U</b>al vi<b style="color: #0d6efd;">D</b>eo an<b style="color: #0d6efd;">D</b> t<b style="color: #0d6efd;">E</b>xt <b style="color: #0d6efd;">R</b>etrieval.</p>
+        </section>
+        <section id="applications" class="content">
+            <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
+                <header>
+                    <h2>Applications</h2>
+                </header>
+                <div class="flex flex-3">
+                    <article>
+                        <header>
+                            <h3>Video to Text and Text to Video Retrieval</h3>
+                        </header>
+                        <p>
+                            Video text retrieval involves extracting relevant 
+                            videos to a given textual query and vice-versa. 
+                            Usually this is done as a ranking task, where all 
+                            the entries are ranked in relevance to the query. 
+                            The retrieval can also be done across languages due 
+                            to multi-lingual nature of dataset
+                        </p>
+                    </article>
+                    <article>
+                        <header>
+                            <h3>Textual Summarisation of Video</h3>
+                        </header>
+                        <p>
+                            Textual summarisation  involves outlining the key 
+                            actions happening in the video in the form of 
+                            meaningful sentences. These textual descriptions 
+                            are then evaluated using BLEU, Meteor metrics. The 
+                            same task can also be extended to cross lingual 
+                            summarisation.
+                        </p>
+                    </article>
+                    <article>
+                        <header>
+                            <h3>Multi lingual video recommendations</h3>
+                        </header>
+                        <p>
+                            Video recommendation usually works by mining users' 
+                            profiles and history and after that by ranking videos 
+                            according to their preferences and viewing history. 
+                            In absence of such data, one can recommend similar 
+                            videos just based on content of video with no-textual 
+                            metadata of any form. In the same way as earlier, 
+                            this can also be enhanced to include multi-lingual 
+                            video recommendation.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" style="margin: 1rem;">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="col-8">
+                    <p>
+                      <b>For any communication regarding RUDDER,<br/>
+                      Contact</b>: <br/>
+                      Abhishek [abhishek at cse dot iitb dot ac dot in] or <br/>
+                      Jayaprakash A [jayaprakash at cse dot iitb dot ac dot in]
+                  </p>
+                    <p class="text-muted">
+                        Department of Computer Science and Engineering,<br>
+                        Indian Institute of Technology, Bombay<br>
+                        Mumbai, Maharashtra, India
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.cse.iitb.ac.in" target="_blank"><img src="assets/images/iitblogo.png" width=50 align="right" /> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
