@@ -25,8 +25,8 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="/">Overview</a>
                 <a class="nav-item nav-link" href="./about.html">About</a>
-                <a class="nav-item nav-link active" href="./annotations.html">Annotations</a>
-                <a class="nav-item nav-link" href="./manuscript.html">Manuscript</a>
+                <a class="nav-item nav-link" href="./annotations.html">Annotations</a>
+                <a class="nav-item nav-link active" href="./manuscript.html">Manuscript</a>
                 <a class="nav-item nav-link" href="./applications.html">Applications</a>
                 <a class="nav-item nav-link" href="./competition.html">Competition</a>
                 <a class="nav-item nav-link" href="./tutorial.html">Tutorial</a>
@@ -42,57 +42,12 @@
             <h1>Welcome to RUDDER <img src="assets/images/logo.png" alt="" width="160" height="120" class="d-inline-block align-top"></h1>
             <p>c<b style="color: #0d6efd;">R</b>oss ling<b style="color: #0d6efd;">U</b>al vi<b style="color: #0d6efd;">D</b>eo an<b style="color: #0d6efd;">D</b> t<b style="color: #0d6efd;">E</b>xt <b style="color: #0d6efd;">R</b>etrieval.</p>
         </section> -->
-        <section id="annotation" class="content">
+        <section id="manuscript" class="content">
             <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
                 <header>
-                    <h2>Annotation Guidelines</h2>
+                    <h2>Rudder Tutorial</h2>
                 </header>
-                <p style="text-align: left;">
-                    For every query, the augmented supervision consists of the 
-                    follow four supervised classes of relevance judgements 
-                    (in addition to the default relevance judgement associated 
-                    with any retrieval dataset),
-                </p>
-                <p style="text-align: center;">
-                    (i) <strong>identity</strong> 
-                    (ii) <strong>overlap</strong> 
-                    (iii) <strong>description</strong> and 
-                    (iv) <strong>no relation</strong>.
-                </p>
-                <p style="text-align: left;">
-                    Our task is to refine the structure between the captions of 
-                    different videos. And to perform video2text and Text2video 
-                    retrieval. Our dataset consists of videos on science 
-                    experiments and farming. Close to 600 videos with 
-                    approximately 7 descriptions per video. In this dataset 
-                    we have defined four different relations
-                </p>
-                <ol>
-                    <li style="text-align: left;">
-                        <strong>Identity</strong>- the relevance judgement when 
-                        both captions/video segment share an almost similar 
-                        amount of information.
-                    </li>
-                    <li style="text-align: left;">
-                        <strong>Partial</strong>- the relevance judgement when 
-                        both captions/video segment share somewhat similar 
-                        information.
-                    </li>
-                    <li style="text-align: left;">
-                        <strong>Description</strong>- the relevance judgement 
-                        when the caption/video segment is a historical 
-                        description of a second caption or the second caption 
-                        is an application of an object mentioned in the first 
-                        caption.
-                    </li>
-                    <li style="text-align: left;">
-                        <strong>No relation</strong>- the relevance judgement 
-                        when the caption/video segment are irrelevant to each 
-                        other.<br /><br />While we obtained the augmented 
-                        supervision using a team of manual annotators on our 
-                        low resource dataset
-                    </li>
-                </ol>
+                <script src="https://gist.github.com/rudder-2021/cefabf5a520e5a56cd36e4e618117150.js"></script>
             </div>
         </section>
     </main>
