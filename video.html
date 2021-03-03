@@ -14,7 +14,7 @@
   <body>
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="./index.html">
                 <img src="assets/images/logo.png" alt="" width="30" height="24" class="d-inline-block align-top">
                 RUDDER 2021
             </a>
@@ -23,9 +23,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/">Overview</a>
+                <a class="nav-item nav-link" href="./index.html">Overview</a>
                 <a class="nav-item nav-link" href="./about.html">About</a>
-                <a class="nav-item nav-link active" href="./annotations.html">Annotations</a>
+                <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Annotations
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="./manual.html">Manual</a></li>
+              <li><a class="dropdown-item" href="./textual.html">Text Based Heurisitcs</a></li>
+              <li><a class="dropdown-item" href="./video.html">Video based Heurisitcs</a></li>
+            </ul>
+          </li>
                 <a class="nav-item nav-link" href="./manuscript.html">Manuscript</a>
                 <a class="nav-item nav-link" href="./applications.html">Applications</a>
                 <a class="nav-item nav-link" href="./competition.html">Competition</a>
@@ -45,54 +54,10 @@
         <section id="annotation" class="content">
             <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
                 <header>
-                    <h2>Annotation Guidelines</h2>
+                    <h2>Video based Heuristical Annotation Guidelines</h2>
                 </header>
-                <p style="text-align: left;">
-                    For every query, the augmented supervision consists of the 
-                    follow four supervised classes of relevance judgements 
-                    (in addition to the default relevance judgement associated 
-                    with any retrieval dataset),
+                <p>All the experimental results discussed so far use textual query-based&nbsp;heuristics to classify the query caption pairs into positive, partial and negative. However, this need not always be the case. We now investigate and describe a video-based heuristic that samples positive/partial/negative pairs based on the objects in the videos and the actions happening in them. Specifically, we call a pair a positive pair if the objects and actions in both the videos have a high degree of overlap. Likewise, a pair with partial overlap of objects and actions, depending on the overlap thresholds&nbsp;&alpha;<sub>o</sub> and &alpha;<sub>a</sub>, is classified as a partial pair. Any pair that does not satisfy the positivity or partiality criteria is treated as a negative pair. This heuristic, in essence, is a video-based analog of the Noun-Verb heuristic on textual queries.
                 </p>
-                <p style="text-align: center;">
-                    (i) <strong>identity</strong> 
-                    (ii) <strong>overlap</strong> 
-                    (iii) <strong>description</strong> and 
-                    (iv) <strong>no relation</strong>.
-                </p>
-                <p style="text-align: left;">
-                    Our task is to refine the structure between the captions of 
-                    different videos. And to perform video2text and Text2video 
-                    retrieval. Our dataset consists of videos on science 
-                    experiments and farming. Close to 600 videos with 
-                    approximately 7 descriptions per video. In this dataset 
-                    we have defined four different relations
-                </p>
-                <ol>
-                    <li style="text-align: left;">
-                        <strong>Identity</strong>- the relevance judgement when 
-                        both captions/video segment share an almost similar 
-                        amount of information.
-                    </li>
-                    <li style="text-align: left;">
-                        <strong>Partial</strong>- the relevance judgement when 
-                        both captions/video segment share somewhat similar 
-                        information.
-                    </li>
-                    <li style="text-align: left;">
-                        <strong>Description</strong>- the relevance judgement 
-                        when the caption/video segment is a historical 
-                        description of a second caption or the second caption 
-                        is an application of an object mentioned in the first 
-                        caption.
-                    </li>
-                    <li style="text-align: left;">
-                        <strong>No relation</strong>- the relevance judgement 
-                        when the caption/video segment are irrelevant to each 
-                        other.<br /><br />While we obtained the augmented 
-                        supervision using a team of manual annotators on our 
-                        low resource dataset
-                    </li>
-                </ol>
             </div>
         </section>
     </main>
@@ -103,7 +68,7 @@
             <div class="d-flex justify-content-between">
                 <div class="col-8">
                     <p>
-                        <a href="/" style="text-decoration: none; font-size: 1.5rem; color:#0d6efd;">
+                        <a href="./index.html" style="text-decoration: none; font-size: 1.5rem; color:#0d6efd;">
                             <b>RUDDER 2021</b>
                         </a>
                     </p>

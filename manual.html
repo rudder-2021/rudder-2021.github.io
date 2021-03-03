@@ -26,20 +26,20 @@
                 <a class="nav-item nav-link" href="./index.html">Overview</a>
                 <a class="nav-item nav-link" href="./about.html">About</a>
                 <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Annotations
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               <li><a class="dropdown-item" href="./manual.html">Manual</a></li>
-              <li><a class="dropdown-item" href="./heuristics.html">Heuristical</a></li>
-              <li><a class="dropdown-item" href="./video.html">Video based</a></li>
+              <li><a class="dropdown-item" href="./textual.html">Text Based Heurisitcs</a></li>
+              <li><a class="dropdown-item" href="./video.html">Video based Heurisitcs</a></li>
             </ul>
           </li>
                 <a class="nav-item nav-link" href="./manuscript.html">Manuscript</a>
                 <a class="nav-item nav-link" href="./applications.html">Applications</a>
                 <a class="nav-item nav-link" href="./competition.html">Competition</a>
                 <a class="nav-item nav-link" href="./tutorial.html">Tutorial</a>
-                <a class="nav-item nav-link active" href="./downloads.html">Downloads</a>
+                <a class="nav-item nav-link" href="./downloads.html">Downloads</a>
                 <a class="nav-item nav-link" href="./citation.html">Citation</a>
             </div>
           </div>
@@ -51,47 +51,57 @@
             <h1>Welcome to RUDDER <img src="assets/images/logo.png" alt="" width="160" height="120" class="d-inline-block align-top"></h1>
             <p>c<b style="color: #0d6efd;">R</b>oss ling<b style="color: #0d6efd;">U</b>al vi<b style="color: #0d6efd;">D</b>eo an<b style="color: #0d6efd;">D</b> t<b style="color: #0d6efd;">E</b>xt <b style="color: #0d6efd;">R</b>etrieval.</p>
         </section> -->
-        <section id="downloads" class="content">
+        <section id="annotation" class="content">
             <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
                 <header>
-                    <h2>Download</h2>
+                    <h2>Manual Annotation Guidelines</h2>
                 </header>
-
-                The dataset folder structure is as follows
-                <pre><code>|-- Lang1<br />    |-- videos
-        |-- vidName.mp4
-        |-- vidName.mp4
-    |-- segmented_videos
-        |-- vidName_startTime_endTime.mp4
-        |-- vidName_startTime_endTime.mp4<br />    |-- audios
-        |-- vidName.wav
-        |-- vidName.wav
-    |-- segmented_audios
-        |-- vidName_startTime_endTime.wav
-        |-- vidName_startTime_endTime.wav<br />    |-- captions
-        |-- vidName.txt
-        |-- vidName.txt<br />    |-- segmented_captions
-        |-- vidName_startTime_endTime.txt
-        |-- vidName_startTime_endTime.txt<br />|-- Lang2<br />    |-- videos
-        |-- vidName.mp4
-        |-- vidName.mp4
-    |-- segmented_videos
-        |-- vidName_startTime_endTime.mp4
-        |-- vidName_startTime_endTime.mp4<br />    |-- audios
-        |-- vidName.wav
-        |-- vidName.wav
-    |-- segmented_audios
-        |-- vidName_startTime_endTime.wav
-        |-- vidName_startTime_endTime.wav<br />    |-- captions
-        |-- vidName.txt
-        |-- vidName.txt<br />    |-- segmented_captions
-        |-- vidName_startTime_endTime.txt
-        |-- vidName_startTime_endTime.txt</code></pre>
-            
-
-            Please fill out the form.
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjFVh6yJcUe3CXbAYhEG5u6JzvSyVBsvDN6jdvwX59QoVN9A/viewform?embedded=true" width="100%" height="500px">
-            </iframe>
+                <p style="text-align: left;">
+                    For every query, the augmented supervision consists of the 
+                    follow four supervised classes of relevance judgements 
+                    (in addition to the default relevance judgement associated 
+                    with any retrieval dataset),
+                </p>
+                <p style="text-align: center;">
+                    (i) <strong>identity</strong> 
+                    (ii) <strong>overlap</strong> 
+                    (iii) <strong>description</strong> and 
+                    (iv) <strong>no relation</strong>.
+                </p>
+                <p style="text-align: left;">
+                    Our task is to refine the structure between the captions of 
+                    different videos. And to perform video2text and Text2video 
+                    retrieval. Our dataset consists of videos on science 
+                    experiments and farming. Close to 600 videos with 
+                    approximately 7 descriptions per video. In this dataset 
+                    we have defined four different relations
+                </p>
+                <ol>
+                    <li style="text-align: left;">
+                        <strong>Identity</strong>- the relevance judgement when 
+                        both captions/video segment share an almost similar 
+                        amount of information.
+                    </li>
+                    <li style="text-align: left;">
+                        <strong>Partial</strong>- the relevance judgement when 
+                        both captions/video segment share somewhat similar 
+                        information.
+                    </li>
+                    <li style="text-align: left;">
+                        <strong>Description</strong>- the relevance judgement 
+                        when the caption/video segment is a historical 
+                        description of a second caption or the second caption 
+                        is an application of an object mentioned in the first 
+                        caption.
+                    </li>
+                    <li style="text-align: left;">
+                        <strong>No relation</strong>- the relevance judgement 
+                        when the caption/video segment are irrelevant to each 
+                        other.<br /><br />While we obtained the augmented 
+                        supervision using a team of manual annotators on our 
+                        low resource dataset
+                    </li>
+                </ol>
             </div>
         </section>
     </main>

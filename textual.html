@@ -26,20 +26,20 @@
                 <a class="nav-item nav-link" href="./index.html">Overview</a>
                 <a class="nav-item nav-link" href="./about.html">About</a>
                 <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Annotations
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               <li><a class="dropdown-item" href="./manual.html">Manual</a></li>
-              <li><a class="dropdown-item" href="./heuristics.html">Heuristical</a></li>
-              <li><a class="dropdown-item" href="./video.html">Video based</a></li>
+              <li><a class="dropdown-item" href="./textual.html">Text Based Heurisitcs</a></li>
+              <li><a class="dropdown-item" href="./video.html">Video based Heurisitcs</a></li>
             </ul>
           </li>
                 <a class="nav-item nav-link" href="./manuscript.html">Manuscript</a>
                 <a class="nav-item nav-link" href="./applications.html">Applications</a>
                 <a class="nav-item nav-link" href="./competition.html">Competition</a>
                 <a class="nav-item nav-link" href="./tutorial.html">Tutorial</a>
-                <a class="nav-item nav-link active" href="./downloads.html">Downloads</a>
+                <a class="nav-item nav-link" href="./downloads.html">Downloads</a>
                 <a class="nav-item nav-link" href="./citation.html">Citation</a>
             </div>
           </div>
@@ -51,47 +51,13 @@
             <h1>Welcome to RUDDER <img src="assets/images/logo.png" alt="" width="160" height="120" class="d-inline-block align-top"></h1>
             <p>c<b style="color: #0d6efd;">R</b>oss ling<b style="color: #0d6efd;">U</b>al vi<b style="color: #0d6efd;">D</b>eo an<b style="color: #0d6efd;">D</b> t<b style="color: #0d6efd;">E</b>xt <b style="color: #0d6efd;">R</b>etrieval.</p>
         </section> -->
-        <section id="downloads" class="content">
+        <section id="annotation" class="content">
             <div class="container" style="margin-top: 2rem; margin-bottom: 4rem;">
                 <header>
-                    <h2>Download</h2>
+                    <h2>Text based Heuristical Annotation Guidelines</h2>
                 </header>
-
-                The dataset folder structure is as follows
-                <pre><code>|-- Lang1<br />    |-- videos
-        |-- vidName.mp4
-        |-- vidName.mp4
-    |-- segmented_videos
-        |-- vidName_startTime_endTime.mp4
-        |-- vidName_startTime_endTime.mp4<br />    |-- audios
-        |-- vidName.wav
-        |-- vidName.wav
-    |-- segmented_audios
-        |-- vidName_startTime_endTime.wav
-        |-- vidName_startTime_endTime.wav<br />    |-- captions
-        |-- vidName.txt
-        |-- vidName.txt<br />    |-- segmented_captions
-        |-- vidName_startTime_endTime.txt
-        |-- vidName_startTime_endTime.txt<br />|-- Lang2<br />    |-- videos
-        |-- vidName.mp4
-        |-- vidName.mp4
-    |-- segmented_videos
-        |-- vidName_startTime_endTime.mp4
-        |-- vidName_startTime_endTime.mp4<br />    |-- audios
-        |-- vidName.wav
-        |-- vidName.wav
-    |-- segmented_audios
-        |-- vidName_startTime_endTime.wav
-        |-- vidName_startTime_endTime.wav<br />    |-- captions
-        |-- vidName.txt
-        |-- vidName.txt<br />    |-- segmented_captions
-        |-- vidName_startTime_endTime.txt
-        |-- vidName_startTime_endTime.txt</code></pre>
-            
-
-            Please fill out the form.
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjFVh6yJcUe3CXbAYhEG5u6JzvSyVBsvDN6jdvwX59QoVN9A/viewform?embedded=true" width="100%" height="500px">
-            </iframe>
+                <p>In most datasets, the textual captions consist of a subject, one or more objects (noun), and the associated verbs, all of which can be&nbsp;retrieved using an off-the-shelf part-of-speech POS tagger.&nbsp;Given the recovered nouns and verbs, we compute the percentage overlap between the noun-verbs of the query caption&nbsp;with all the other captions in the batch. Trivially, a 100%&nbsp;overlap represents a positive sample and a 0% overlap represents a negative sample. For the partial sample selection,&nbsp;however, we select thresholds&nbsp;&alpha;<sub>n</sub> and&nbsp;&alpha;<sub>v</sub> for the percentage&nbsp;overlap of nouns and verbs, respectively. Finally, a sample&nbsp;is labeled as partial if it is not a positive sample and satisfies either the noun threshold or the verb threshold. Intuitively, a common verb is a strong signal of similarity between two actions, hinting towards the possibility of similar visual features. We note here that this is only one of the many&nbsp;possibilities of heuristic functions.
+                </p>
             </div>
         </section>
     </main>
